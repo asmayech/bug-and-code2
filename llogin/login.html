@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" />
+    <script src="login.js"></script>
   </head>
   <body>
     <nav class="nav">
@@ -28,7 +29,10 @@
           placeholder="Password"
           required
         />
-        <button class="button" type="submit">Login</button>
+        <button class="button" id="button" onclick="check()" type="submit">
+          Login
+        </button>
+        <div id="labe">dlq</div>
         <div class="forgot-password">
           <a href="#" class="pwd">Forgot Password?</a><br />
           <a class="create"> create account</a>

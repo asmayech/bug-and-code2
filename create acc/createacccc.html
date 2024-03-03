@@ -6,22 +6,25 @@
       <img src="bug and code.png" />
       <span> bug and code</span>
     </nav>
+    <script src="createAcc.js"></script>
   </head>
   <body>
     <div class="login-container">
       <div class="login-form">
         <h2>create account</h2>
         Username:
-        <input type="text" placeholder="Username" required /><br />
-        <br />password :<input
-          type="password"
-          placeholder="Password"
+        <input
+          type="text"
+          id="username"
+          placeholder="Username"
           required
-        />
+        /><br />
+        password :
+        <input type="password" id="pwd" placeholder="Password" required />
         <br />
         rewrite password :
-        <input type="password" placeholder="Password" required />
-        <button class="button" type="submit">submit</button>
+        <input type="password" id="repwd " placeholder="Password" required />
+        <button class="button" id="labe" type="submit">submit</button>
       </div>
     </div>
   </body>
