@@ -8,42 +8,41 @@
     <script src="login.js"></script>
   </head>
   <body>
-    <nav class="nav">
-      <img src="bug and code.png" />
-      <span> bug and code</span>
-    </nav>
+    <form method="post" action="login.php">
+      <nav class="nav">
+        <img src="bug and code.png" />
+        <span> bug and code</span>
+      </nav>
 
-    <div class="login-container">
-      <div class="login-form">
-        <h2>Login</h2>
-        Username:
-        <input
-          type="text"
-          id="username"
-          placeholder="Username"
-          required
-        /><br />
-        <br />password :<input
-          type="password"
-          id="pass"
-          placeholder="Password"
-          required
-        />
-        <button class="button" id="button" onclick="check()" type="submit">
-          Login
-        </button>
-        <div id="labe">dlq</div>
-        <div class="forgot-password">
-          <a href="#" class="pwd">Forgot Password?</a><br />
-          <a class="create"> create account</a>
+      <div class="login-container">
+        <div class="login-form">
+          <h2>Login</h2>
+          Username:
+          <input
+            type="text"
+            id="username"
+            placeholder="Username"
+            name="usename"
+            required
+          /><br />
+          <br />password :<input
+            type="password"
+            id="pass"
+            placeholder="Password"
+            name="pwd"
+            required
+          />
+          <button class="button" id="button" onclick="check()" type="submit">
+            Login
+          </button>
+          <div id="labe">dlq</div>
+          <div class="forgot-password">
+            <a href="#" class="pwd">Forgot Password?</a><br />
+            <a class="create"> create account</a>
+          </div>
         </div>
       </div>
-    </div>
-    <script>
-      function log() {
-        let str = document.getElementById("pass").value;
-      }
-    </script>
+    </form>
   </body>
   <style>
     .nav {
